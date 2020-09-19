@@ -561,3 +561,68 @@ button:hover
   background-color: #a43f49;
   color: #fff;  
 }
+@media screen and (max-width: 1280px) and (min-width: 846px) {
+    .menu {
+        width: 25%;
+    }
+}
+
+#menu-toggle,
+#menu-close {
+    display: none;
+}  
+
+@media screen and (max-width: 845px) {        
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }    
+
+    .menu {        
+        width: 320px;
+        -webkit-transform: translateX(-100%) ;
+        transform: translateX(-100%) ;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    }
+
+    .menu .image {
+        margin-top: 40px;        
+    }
+
+    .menu .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .author-content {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    .responsive-nav {
+        display: inline-block;
+    }
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+    .right-image-post img {
+        margin-top: 30px;
+    }
+}
