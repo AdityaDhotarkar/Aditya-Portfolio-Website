@@ -561,7 +561,8 @@ button:hover
         margin: 20px 0px 40px 0px;
     }
 
-    .menu .container {
+    .menu .container 
+    {
         padding-left: 15px;
         padding-right: 15px;
     }
