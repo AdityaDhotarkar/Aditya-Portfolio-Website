@@ -227,18 +227,18 @@ html {
   background-color: #a43f49;
   box-sizing: border-box;
   height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
+  max-height: 100vh ;
+  max-width: 80vw ;
+  min-width: 45px ;
   outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
+  overflow-x: hidden ;
+  overflow-y: auto ;
   padding: 0;
-  position: fixed !important;
+  position: fixed ;
   top: calc(0px);  
   width: 20%;
   will-change: transform;
-  z-index: 9999 !important;
+  z-index: 9999 ;
 }
 
 .section {
@@ -306,7 +306,7 @@ html {
     color: #4a4a4a;
 }
 
-.service-item{
+.service-item .service-icon {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -521,6 +521,7 @@ button:hover
   background-color: #a43f49;
   color: #fff;  
 }
+
 @media screen and (max-width: 1280px) and (min-width: 846px) {
     .menu {
         width: 25%;
