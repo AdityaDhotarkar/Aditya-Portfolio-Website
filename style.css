@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,13 +6,11 @@
 
 
 
-body
-{
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.page-bg
-{
+.page-bg {
     background: url(page-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -96,6 +94,12 @@ html {
     margin: 0 auto;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* m */
+
 .main-nav {
     text-align: center;
 }
@@ -127,8 +131,7 @@ html {
 }
 
 
-.responsive-nav
-{
+.responsive-nav {
     display: inline-block;
 }
 
@@ -221,24 +224,40 @@ html {
 }
 
 .menu {
-   left: 10%;
-  /* -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    left: 10%;
+    /* -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch; */
-  background-color: #a43f49;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh ;
-  max-width: 80vw ;
-  min-width: 45px ;
-  outline: none;
-  overflow-x: hidden ;
-  overflow-y: auto ;
-  padding: 0;
-  position: fixed ;
-  top: calc(0px);  
-  width: 20%;
-  will-change: transform;
-  z-index: 9999 ;
+    background-color: #a43f49;
+    box-sizing: border-box;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 80vw;
+    min-width: 45px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    position: fixed;
+    top: calc(0px);
+    width: 20%;
+    will-change: transform;
+    z-index: 9999;
+    transition: 0.5s !important;
+}
+
+@media(max-width: 768px) {
+    .menu {
+        left: 0;
+    }
+
+    .marginLeft {
+        margin-left: 300px !important;
+    }
+
+    .open-sidebar {
+
+        left: 80%;
+    }
 }
 
 .section {
@@ -337,106 +356,113 @@ html {
     margin-top: 20px;
 }
 
-.right-image-post ,
-.left-image-post{
+.right-image-post,
+.left-image-post {
     margin-top: 30px;
 }
 
 
-  .progress2 {
+.progress2 {
     padding: 6px;
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.25);  
+    background: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.384), 0 1px rgba(255, 255, 255, 0.08);
-  }
-  
-  .progress-bar2 {
+}
+
+.progress-bar2 {
     height: 18px;
     border-radius: 30px;
-    background-image: 
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    transition: 0.4s linear;  
-    transition-property: width, background-color;    
-  }
-  
-  .progress-moved-html .progress-bar2 {
-    width: 95%; 
-    background-color: #a43f49;  
-    animation: progressAnimation 6s;
-  }
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
 
-  .progress-moved-css .progress-bar2 {
-    width: 90%; 
-    background-color: #a43f49;  
+.progress-moved-html .progress-bar2 {
+    width: 95%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-js .progress-bar2 {
-    width: 50%; 
-    background-color: #a43f49;  
+.progress-moved-css .progress-bar2 {
+    width: 90%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-python .progress-bar2 {
-    width: 80%; 
-    background-color: #a43f49;  
+.progress-moved-js .progress-bar2 {
+    width: 50%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-cpp .progress-bar2 {
-    width: 70%; 
-    background-color: #a43f49;  
+.progress-moved-python .progress-bar2 {
+    width: 80%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-c .progress-bar2 {
-    width: 87%; 
-    background-color:#a43f49;  
+.progress-moved-cpp .progress-bar2 {
+    width: 70%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-php .progress-bar2{
-    width: 40%; 
-    background-color:#a43f49;
+.progress-moved-c .progress-bar2 {
+    width: 87%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-bootstrap .progress-bar2{
-    width: 82%; 
-    background-color:#a43f49; 
+.progress-moved-php .progress-bar2 {
+    width: 40%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-reactjs .progress-bar2{
-    width: 25%; 
-    background-color:#a43f49;  
+.progress-moved-bootstrap .progress-bar2 {
+    width: 82%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-java .progress-bar2{
-    width: 40%; 
-    background-color: #a43f49;  
+.progress-moved-reactjs .progress-bar2 {
+    width: 25%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-angularjs .progress-bar2{
-    width: 35%; 
-    background-color: #a43f49;  
+.progress-moved-java .progress-bar2 {
+    width: 40%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
+}
 
-  .progress-moved-r .progress-bar2 {
-    width: 65%; 
-    background-color: #a43f49;  
+.progress-moved-angularjs .progress-bar2 {
+    width: 35%;
+    background-color: #a43f49;
     animation: progressAnimation 6s;
-  }
-  
-  @keyframes progressAnimation {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 85%; background-color:#a43f49; }
-  }
+}
 
-  .service-item .service-icon {
+.progress-moved-r .progress-bar2 {
+    width: 65%;
+    background-color: #a43f49;
+    animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 5%;
+        background-color: #F9BCCA;
+    }
+
+    100% {
+        width: 85%;
+        background-color: #a43f49;
+    }
+}
+
+.service-item .service-icon {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -449,7 +475,7 @@ html {
 .service-item .first-service-icon {
     background-image: url(android.svg);
 
-} 
+}
 
 .service-item .second-service-icon {
     background-image: url(world-wide-web.svg);
@@ -460,8 +486,8 @@ section.contact-me {
 }
 
 #contact input {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 1);
     border-radius: 0px;
     margin-bottom: 30px;
     color: #fff;
@@ -478,8 +504,8 @@ section.contact-me {
 }
 
 #contact textarea {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 1);
     border-radius: 0px;
     margin-bottom: 30px;
     color: #fff;
@@ -515,11 +541,10 @@ button {
     cursor: pointer;
 }
 
-button:hover
-{
-  outline: none;  
-  background-color: #a43f49;
-  color: #fff;  
+button:hover {
+    outline: none;
+    background-color: #a43f49;
+    color: #fff;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 846px) {
@@ -531,25 +556,26 @@ button:hover
 #menu-toggle,
 #menu-close {
     display: none;
-}  
+}
 
-@media screen and (max-width: 845px) {        
+@media screen and (max-width: 845px) {
+
     #menu-toggle,
     #menu-close {
         display: inline-block;
-    }    
+    }
 
-    .menu {        
+    .menu {
         width: 320px;
-        -webkit-transform: translateX(-100%) ;
-        transform: translateX(-100%) ;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
         transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 40px;
     }
 
     .menu .image img {
@@ -561,8 +587,7 @@ button:hover
         margin: 20px 0px 40px 0px;
     }
 
-    .menu .container 
-    {
+    .menu .container {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -570,20 +595,23 @@ button:hover
     .menu.open {
         display: inline-block;
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
     }
 
     .responsive-nav {
         display: inline-block;
     }
+
     .section {
         width: 94%;
         right: 3%;
         left: 3%;
     }
+
     .left-image-post img {
         margin-bottom: 30px;
     }
+
     .right-image-post img {
         margin-top: 30px;
     }
