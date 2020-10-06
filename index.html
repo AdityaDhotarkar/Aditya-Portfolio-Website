@@ -2,366 +2,352 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Aditya Portfolio Website</title>
+  <title>Aditya Portfolio Website</title>
 </head>
 
 <body>
-    <div class="page-bg">
-        <div class="responsive-nav">
-            <div id="menu" class="menu">
-                <div class="container">
-                    <div class="image">
-                        <a href="#"><img src="author.jpg" alt="" /></a>
-                    </div>
-                    <div class="author-content">
-                        <h4>Aditya Dhotarkar</h4>
-                        <span>Full Stack Web Developer</span>
-                    </div>
-                    <nav class="main-nav" role="navigation">
-                        <ul class="main-menu">
-                            <li><a href="#section1">About Me</a></li>
-                            <li><a href="#section2">What I’m good at</a></li>
-                            <li><a href="#section3">Projects</a></li>
-                            <li><a href="#section4">Contact Me</a></li>
-                        </ul>
-                    </nav>
-                    <div class="social-network">
-                        <ul class="social-icons">
-                            <li>
-                                <a href="https://www.facebook.com/aditya.dhotarkar.10" target="_blank"><i
-                                        class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/aditya-dhotarkar-11733a1b1" target="_blank"><i
-                                        class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/aditya._517" target="_blank"><i
-                                        class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/AdityaDhotarkar" target="_blank"><i class="fa fa-github"
-                                        aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copyright-text">
-                        <p>Copyright 2020 Aditya Dhotarkar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="page-bg">
+    <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" name="toggle" id="toggle"
+      onClick="sidebarToggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="responsive-nav" id="sidebar">
+      <div id="menu" class="menu">
 
-        <section class="section about-me" data-section="section1" id="section1">
-            <div class="container">
-                <div class="section-heading">
-                    <h2>About Me</h2>
-                    <div class="line-dec"></div>
-                    <span>I am a student of Vishwakarma Institute of Technology pursuing Computer Science Engineering. I
-                        am interested in
-                        Competitive Programming, Problem Solving and Web Development.
-                    </span>
-                </div>
-                <div class="left-image-post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="left-image">
-                        <img src="res.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="right-text">
-                        <h4>Building Responsive and Intuitive Design</h4>
-                        <p>
-                          My Websites will work on any device such as mobile phones, laptops, ipads etc.
-                          My Websites have strong perfomance for easy to use and user friendly websites.
-                          My Websites will also have Intuitive and attractive UI/UX Design.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="right-image-post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="left-text">
-                        <h4>Building Fast and Dynamic Website</h4>
-                        <p>
-                          My Highest Priority in building Websites is fast load times and lag free interaction. 
-                          I don't make website static because I love to make websites dynamic. It is easy to use for 
-                          simple user. Dynamic Websites are more appealing than the static website.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="right-image">
-                        <img src="dynamic-1.jpg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section my-services" data-section="section2" id="section2">
-            <div class="container">
-                <div class="section-heading">
-                    <h2>What I’m good at?</h2>
-                    <div class="line-dec"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-html">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>HTML5</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-css">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>CSS3</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-js">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>JavaScript</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-python">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>Python</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-cpp">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>CPP</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-c">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>C</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-php">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>PHP</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-bootstrap">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>Bootstrap</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-reactjs">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>React JS</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-java">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>Java</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-angularjs">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>Angular JS</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="service-item">
-                            <div class="progress2 progress-moved-r">
-                                <div class="progress-bar2" >
-                                </div>                       
-                              </div> 
-                            <h4>R Language</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section my-services" data-section="section3" id="section3">
-            <div class="container">
-              <div class="section-heading">
-                <h2>Projects</h2>
-                <div class="line-dec"></div>
-                <span>
-                I have done my Projects in Various Domains like Android Development , Web Development etc.
-                I am also looking for doing some more interesting projects on various domains.              
-               </span>
+        <div class="container">
+          <div class="image">
+            <a href="#"><img src="author.jpg" alt="" /></a>
           </div>
+          <div class="author-content">
+            <h4>Aditya Dhotarkar</h4>
+            <span>Full Stack Web Developer</span>
+          </div>
+          <nav class="main-nav" role="navigation">
+            <ul class="main-menu">
+              <li><a href="#section1">About Me</a></li>
+              <li><a href="#section2">What I’m good at</a></li>
+              <li><a href="#section3">Projects</a></li>
+              <li><a href="#section4">Contact Me</a></li>
+            </ul>
+          </nav>
+          <div class="social-network">
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/aditya.dhotarkar.10" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/aditya-dhotarkar-11733a1b1" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aditya._517" target="_blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/AdityaDhotarkar" target="_blank"><i class="fa fa-github"
+                    aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-text">
+            <p>Copyright 2020 Aditya Dhotarkar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about-me" data-section="section1" id="section1">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <div class="line-dec"></div>
+          <span>I am a student of Vishwakarma Institute of Technology pursuing Computer Science Engineering. I
+            am interested in
+            Competitive Programming, Problem Solving and Web Development.
+          </span>
+        </div>
+        <div class="left-image-post">
           <div class="row">
             <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Android Development</h4>
+              <div class="left-image">
+                <img src="res.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-text">
+                <h4>Building Responsive and Intuitive Design</h4>
                 <p>
-                  My Project in Android Development Domain is Restaurant Management Application.
-                  In this Application, we can see list of items in reastaurant along with the items
-                  information, item price, item ratings etc. This application also provides feature 
-                  such as selection of quantity of item, add to cart button, online ordering system etc.
+                  My Websites will work on any device such as mobile phones, laptops, ipads etc.
+                  My Websites have strong perfomance for easy to use and user friendly websites.
+                  My Websites will also have Intuitive and attractive UI/UX Design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-text">
+                <h4>Building Fast and Dynamic Website</h4>
+                <p>
+                  My Highest Priority in building Websites is fast load times and lag free interaction.
+                  I don't make website static because I love to make websites dynamic. It is easy to use for
+                  simple user. Dynamic Websites are more appealing than the static website.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-                <div class="service-item">
-                  <div class="second-service-icon service-icon"></div>
-                  <h4>Website Development</h4>
-                  <p>
-                    My Project in Website Development Domain is Exams Mantra Website.
-                    In this website, we can see list and information of various exams of different classes.
-                    This website contains information of exams from 5th to Various Competitve Examinations.
-                    This website include feature such as login/logout, direct links for various examinations etc.
-                  </p>
-                </div>
+              <div class="right-image">
+                <img src="dynamic-1.jpg" alt="" />
               </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section my-services" data-section="section2" id="section2">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What I’m good at?</h2>
+          <div class="line-dec"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-html">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>HTML5</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-css">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>CSS3</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-js">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-python">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>Python</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-cpp">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>CPP</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-c">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>C</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-php">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>PHP</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-bootstrap">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>Bootstrap</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-reactjs">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>React JS</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-java">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>Java</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-angularjs">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>Angular JS</h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="progress2 progress-moved-r">
+                <div class="progress-bar2">
+                </div>
+              </div>
+              <h4>R Language</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section my-services" data-section="section3" id="section3">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <div class="line-dec"></div>
+          <span>
+            I have done my Projects in Various Domains like Android Development , Web Development etc.
+            I am also looking for doing some more interesting projects on various domains.
+          </span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="first-service-icon service-icon"></div>
+              <h4>Android Development</h4>
+              <p>
+                My Project in Android Development Domain is Restaurant Management Application.
+                In this Application, we can see list of items in reastaurant along with the items
+                information, item price, item ratings etc. This application also provides feature
+                such as selection of quantity of item, add to cart button, online ordering system etc.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="second-service-icon service-icon"></div>
+              <h4>Website Development</h4>
+              <p>
+                My Project in Website Development Domain is Exams Mantra Website.
+                In this website, we can see list and information of various exams of different classes.
+                This website contains information of exams from 5th to Various Competitve Examinations.
+                This website include feature such as login/logout, direct links for various examinations etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section contact-me" data-section="section4" id="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact Me</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact Me</h2>
+          <div class="line-dec"></div>
+        </div>
+        <div class="row">
+          <div class="right-content">
+            <div class="container">
+              <form id="contact" action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
+                        required="" />
+                    </fieldset>
                   </div>
-                </form>
-              </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" placeholder="Your email..."
+                        required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
+                        required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
+                        required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">
+                        Send Message
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    </div>
+      </div>
+    </section>
+  </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <script src="script.js"></script>
+
+
 </body>
 
 </html>
